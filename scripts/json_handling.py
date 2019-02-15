@@ -8,3 +8,7 @@ class JsonHandler(object):
     	print('Write json file %s' % (jsonfilepath,))
         with open(jsonfilepath, 'w') as outfile:
             json.dump(data, outfile)
+
+    def read_json_data(self, jsonfilepath):
+		with open(jsonfilepath, 'r') as f:
+			return json.load(f)

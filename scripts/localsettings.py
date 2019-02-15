@@ -4,6 +4,8 @@ SQLITE_DB_PATH = u'/Users/sidhshar/Downloads/dbstore/pp.sqlite'
 
 JSON_DATA_FILENAME = 'pp.json'
 
+MASTER_JSON_FILENAME = 'master.json'
+
 STOP_COUNT = 2
 
 # ------- STORAGE SETTINGS ----------- #

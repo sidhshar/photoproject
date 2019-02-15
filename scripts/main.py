@@ -3,8 +3,6 @@
 
 import os
 
-from PIL import Image, ExifTags
-
 import image_handling
 import localsettings as ls
 
@@ -36,13 +34,11 @@ def run():
 		else:
 			print('Processing %s -> %s' % (root, files))
 			analysis = { 'root': root, 'dirs': dirs, 'files': files }
-			#filedata = handle_files(root, files)
-			#analysis['file_data'] = filedata
 			analysis['file_count'] = len(files)
 			jsonfilepath = os.path.join(os.path.abspath(root), ls.JSON_DATA_FILENAME)
 			jHandle.write_data_as_json(jsonfilepath, analysis)
 		#break
 
 if __name__ == "__main__":
-    run()
-    print('Done.')
+	run()
+	print('Done.')

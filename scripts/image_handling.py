@@ -1,11 +1,7 @@
 #!/usr/bin/python
 # This Python file uses the encoding: utf-8
 
-import os
-
 from PIL import Image, ExifTags
-
-import localsettings as ls
 
 def get_jpg_exif(filepath):
     img = Image.open(filepath)
